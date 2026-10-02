@@ -1,0 +1,182 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Registration Form</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        th {
+            background-color: pink;
+            color: blue;
+            font-size: 20px;
+        }
+
+        td {
+            background-color: red;
+            font-size: 18px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            font-size: 16px;
+            width: 90%;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Patient Registration Form</h1>
+
+    <form action="" method="post" name="patient">
+
+        <table>
+
+            <tr>
+                <th>Field</th>
+                <th>Details to Fill</th>
+            </tr>
+
+            <tr>
+                <td>Full Name:</td>
+                <td>
+                    <input type="text" name="name"
+                           placeholder="Enter full name"
+                           maxlength="50">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="number" name="age"
+                           min="1" max="120"
+                           placeholder="Enter age">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male">
+                    Male
+
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Patient ID:</td>
+                <td>
+                    <input type="text" name="patient_id"
+                           placeholder="Enter patient ID">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone Number:</td>
+                <td>
+                    <input type="tel" name="phone"
+                           placeholder="07XXXXXXXX">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Health Status:</td>
+                <td>
+                    <select name="health_status">
+                        <option value="">--Select--</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea name="address"
+                              cols="30"
+                              rows="4"
+                              placeholder="Enter address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ID Number:</td>
+                <td>
+                    <input type="text" name="id_number"
+                           placeholder="Enter ID number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Marital Status:</td>
+                <td>
+                    <select name="marital_status">
+                        <option value="">--Select--</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Next of Kin:</td>
+                <td>
+                    <input type="text" name="next_of_kin"
+                           placeholder="Enter next of kin">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Weight (kg):</td>
+                <td>
+                    <input type="number" name="weight"
+                           step="0.1"
+                           placeholder="Enter weight">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Action:</td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
